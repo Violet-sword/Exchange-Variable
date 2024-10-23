@@ -13,7 +13,7 @@ We can use it through any web browser and even on Terminal (automation with Shel
 
 Visiting the URL to the Worker will display the stored content in plain text on the browser page (eg. visiting https://your-name.workers.dev on the browser). 
 
-To change the content, we can add a special variable command to the URL. Say if we want to change the content to be the text "NewContent", we can visit "https://your-name.workers.dev/?stored-text=NewContent". First add "/?" to the end of the base URL, and "stored-text" is the variable name here. The variable name can be customized by changing 'stored-text' on line 32 of worker.js (the one wraped in single quotation marks: url.searchParams.get('stored-text');)
+To change the content, we can add a special variable command to the URL. Say if we want to change the content to be the text "NewContent", we can visit "https://your-name.workers.dev/?stored-text=NewContent". First add "/?" to the end of the base URL, and "stored-text" is the variable name here. For your security reasons, the variable name can be customized by changing 'stored-text' on line 32 of worker.js (the one wraped in single quotation marks: url.searchParams.get('stored-text');)
 
 ## How to use on command line
 
